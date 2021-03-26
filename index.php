@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <title>Валидный шаблон 2021</title>
     <meta name="description" content="Валидный шаблон 2021" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="#" />
-
-    <link rel='dns-prefetch' href='//s.w.org' />
-    <link rel='stylesheet' id='hstr-style-css'  href='styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='hstr-style-css'  href='css/main.css' type='text/css' media='all' />
 </head>
 
 <body>
@@ -80,7 +78,7 @@
 <footer class="hstr-footer">
     <div class="wrapper">
         <div class="site-info">
-            <?echo "&#169; " . date('Y').", "; ?> <a href="#" >Имя сайта</a> ,
+            <?php echo "&#169;" . date('Y').", "; ?> <a href="#" >Имя сайта</a> ,
             <a href="#">Карта сайта</a>
         </div><!-- .site-info -->
     </div>
@@ -89,6 +87,6 @@
 </div><!-- #page -->
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
 </body>
 </html>
