@@ -1,22 +1,24 @@
 /****** Elad Shechter's RESET *******/
 
 /* box sizing border-box for all elements */
-*, *::before, *::after{ box-sizing:border-box; }
+*, *::before, *::after{ box-sizing: border-box; }
 
-a{ text-decoration:none; color:inherit; cursor:pointer; }
-button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
-figure{margin:0;}
+a { text-decoration:none; color:inherit; cursor:pointer; }
+button {background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure {margin:0;}
 input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd{margin:0; padding:0; list-style:none;}
-h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
-p{margin:0;}
-cite {font-style:normal;}
-fieldset{border-width:0; padding:0; margin:0;}
+ul, ol, dd {margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6 {margin:0; font-size:inherit; font-weight:inherit;}
+p {margin:0; }
+cite {font-style: normal;}
+fieldset {border-width:0; padding:0; margin:0;}
 
 
 html{
-    font-size: 1px;/*for using REM units*/
+    font-size: 1px; /*for using REM units*/
+    height: 100%;
 }
+
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 16rem;
@@ -24,12 +26,81 @@ body{
     line-height: 1.3;
     color: #222;
     margin:0;
+    height: 100%;
+}
+
+h1 {font-size: 48rem;}
+h2 {font-size: 36rem;}
+h3 {font-size: 26rem;}
+p {font-size: 18rem;}
+
+.wrapper {margin: 0 auto; max-width: 1600px; width: 100%; padding: 0 20rem;}
+
+.hstr-site {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.hstr-header {background-color: #eec; flex: 0 0 auto;}
+
+.hstr-site-branding__title {font-size: 30rem;}
+
+
+.site-menu-toggle {display: none;}
+.hstr-content {height: 100%;}
+.hstr-content .wrapper { display: flex; flex: 1 0 auto;  height: 100%; }
+
+.hstr-main { flex:1 1 70%; padding-right: 30rem;  }
+.hstr-aside { flex:1 1 30%;  }
+.hstr-footer { flex: 0 0 auto; min-height: 200px; padding-top:30rem;}
+
+.hstr-footer.loaded {border-top: 1px solid #aaa;}
+
+
+.hstr-button {
+    display:inline-block;
+    padding: 0.5em 1em;
+    color: rgba(0, 0, 0, 0.80);
+    border: 1px solid #000;
+
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+.hstr-button:hover {
+    background-image: linear-gradient(45deg, #30fe29 0%, #543002 80%);
+    color: #fff;
+    border-color: #543002;
+}
+
+/*--------------- Small desktop version (from 1280 til 1599)--------------------*/
+
+@media all and (max-width: 1599px) {
+
+}
+
+/*--------------- Tablet version (from 500 til 1279)--------------------*/
+
+@media all and (max-width: 1279px) {
+
+}
+
+/*--------------- Mobile version (from 0 til 499)--------------------*/
+
+@media all and (max-width: 499px) {
+
+    .hstr-content .wrapper {flex-direction: column;}
+
+    .hstr-main {
+        padding-right: 0rem;
+    }
+
+    .hstr-main { flex:0 1 auto;   }
+    .hstr-aside { flex:1 1 auto;  }
 }
 
 
-.hstr-header {background-color: #eec;}
-.hstr-content {border: 1px solid red;}
-
-.hstr-main {background-color: #eee;}
-.hstr-aside {background-color: #cee;}
-.hstr-footer {background-color: #ece;}
